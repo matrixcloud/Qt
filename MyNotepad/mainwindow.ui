@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>878</width>
+    <height>417</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="CodeEditor" name="textEdit"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>878</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="editMenu">
+    <property name="title">
+     <string>Edit(&amp;E)</string>
+    </property>
+    <addaction name="undoAct"/>
+    <addaction name="separator"/>
+    <addaction name="cutAct"/>
+    <addaction name="copyAct"/>
+    <addaction name="pasteAct"/>
+    <addaction name="separator"/>
+    <addaction name="findAct"/>
+    <addaction name="replaceAct"/>
+    <addaction name="separator"/>
+    <addaction name="dateAct"/>
+   </widget>
+   <widget class="QMenu" name="formatMenu">
+    <property name="title">
+     <string>Format(&amp;O)</string>
+    </property>
+    <addaction name="fontAct"/>
+   </widget>
+   <widget class="QMenu" name="checkMenu">
+    <property name="title">
+     <string>Check(&amp;V)</string>
+    </property>
+    <addaction name="statuBarAct"/>
+   </widget>
+   <widget class="QMenu" name="helpMenu">
+    <property name="title">
+     <string>Help(&amp;F)</string>
+    </property>
+    <addaction name="aboutAct"/>
+    <addaction name="aboutQtAct"/>
+   </widget>
+   <widget class="QMenu" name="fileMenu">
+    <property name="title">
+     <string>File(&amp;F)</string>
+    </property>
+    <addaction name="newFileAct"/>
+    <addaction name="openFileAct"/>
+    <addaction name="saveAct"/>
+    <addaction name="saveasAct"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="exitAct"/>
+   </widget>
+   <addaction name="fileMenu"/>
+   <addaction name="editMenu"/>
+   <addaction name="formatMenu"/>
+   <addaction name="checkMenu"/>
+   <addaction name="helpMenu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="newFileAct">
+   <property name="text">
+    <string>New(&amp;N)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="openFileAct">
+   <property name="text">
+    <string>Open(&amp;O)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="saveAct">
+   <property name="text">
+    <string>Save(&amp;S)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="saveasAct">
+   <property name="text">
+    <string>Save As ...(&amp;A)</string>
+   </property>
+  </action>
+  <action name="exitAct">
+   <property name="text">
+    <string>Exit(&amp;X)</string>
+   </property>
+   <property name="toolTip">
+    <string>Exit(X)</string>
+   </property>
+  </action>
+  <action name="undoAct">
+   <property name="text">
+    <string>Undo(&amp;U)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="cutAct">
+   <property name="text">
+    <string>Cut(&amp;T)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="copyAct">
+   <property name="text">
+    <string>Copy(C)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="pasteAct">
+   <property name="text">
+    <string>Paste(P)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="fontAct">
+   <property name="text">
+    <string>Font(F)</string>
+   </property>
+  </action>
+  <action name="aboutQtAct">
+   <property name="text">
+    <string>About Qt</string>
+   </property>
+  </action>
+  <action name="aboutAct">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="findAct">
+   <property name="text">
+    <string>Find(&amp;F)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="statuBarAct">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>StatuBar(&amp;S)</string>
+   </property>
+  </action>
+  <action name="actionReplace">
+   <property name="text">
+    <string>Replace</string>
+   </property>
+  </action>
+  <action name="actionDate">
+   <property name="text">
+    <string>Date</string>
+   </property>
+  </action>
+  <action name="replaceAct">
+   <property name="text">
+    <string>Replace(&amp;H)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+H</string>
+   </property>
+  </action>
+  <action name="dateAct">
+   <property name="text">
+    <string>Date(F5)</string>
+   </property>
+   <property name="shortcut">
+    <string>F5</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>CodeEditor</class>
+   <extends>QPlainTextEdit</extends>
+   <header>codeeditor.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
